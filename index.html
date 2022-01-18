@@ -1,1 +1,53 @@
-<h1>widgets partial</h1>
+<html>
+<head>
+    <title>Widgets Partial</title>
+<style>
+#widgets {
+    max-width:600px;
+    margin:5px;
+    padding:2px;
+}
+#widgets > div {
+    padding:5px;
+    min-height:80px;
+    margin-bottom:5px;
+    border:1px solid #ccc;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position:relative; /* required to place #pic to right */
+}
+
+div.pic img{
+    position:absolute;
+    right:10px;
+    top:10px;
+    max-width:75px;
+}
+</style>
+</head>
+    <body>
+    <h1>Widgets Partial</h1>
+        <div id="widgets">
+            <div>
+                <b>Widget</b><br />
+                <p>Our Widgets are spring loaded and need no batteries!</p>
+                <p>At $3.99 they're a bargain!</p>
+                <div class="pic"><img src="images/widget.png" /></div>
+            </div>
+            <div>
+                <b>Sprocket</b><br />
+                <p>Our Sprockets are well made and hold up to extreme pressure!</p>
+                <p>They only cost $5.99!</p>
+                <div class="pic"><img src="images/sprocket.png" /></div>
+            </div>
+            <div>
+                <b>Thingy</b><br />
+                <p>Our Thingys have many uses, and people come up with new ones all the time!</p>
+                <p>Such a deal at $1.99!</p>
+                <div class="pic"><img src="images/thingy.png" /></div>
+            </div>
+        </div>
+    </body>
+</html>
+
